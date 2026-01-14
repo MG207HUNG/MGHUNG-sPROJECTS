@@ -4,14 +4,18 @@
 bien : la mot vung nho' dung de luu tru mot gia tri ; 
 hay mot vat chua co the tai su dung cho mot gia tri , no hoat dong nhu the no chinh la gia tri ma no dang chua
 int = luu tru so nguyen , co kich thuoc = 4 bytes 
-float = luu tru so thuc dau phay dong co do chinh xac don , co kich thuoc = 4 bytes 
+float = luu tru so thuc dau phay dong co do chinh xac don , co kich thuoc = 4 bytes = 32 bit.
 double = luu tru so thuc , co do chich xac gap 2 float , co kich thuoc = 8 bytes 
 char = luu 1 ky tu , chiem 1 bytes 
 char[] = luu tru mot loat cac ki tu , hay chuoi ki tu , kich thuoc khac nhau dua vao do dai cua chuoi~
 bool = luu tru true hoac false ( 1 bytes , requires <stdbool.h> 
+so bit can de bieu dien mot so toi thieu la : [0-2^n-1]
+mot so cach chuyen nhanh tu dex -> binary : if 31 -> 11111 , or 127 = 1111111
+tran so : khi kich thuoc ko du de chua 
+int : short : 16 bits ( 2 bytes )
 */
 int main (){
-	int year = 2007 ;
+	const int year = 2007 ;
 	int age = 18 ;
 	int soluong = 3 ;
 	printf("%d la nam sinh cua toi \n", year) ;
@@ -36,7 +40,7 @@ int main (){
 	printf("that luon %c \n", okela);
 	// luu y : char dung cho 1 ki tu duy nhat phai dung giau ' ' 
 	char name[] = "Hung Vo";
-	char mail[] = "Email1231321@gmail.com";
+	char mail[] = "Email12.31321@gmail.com";
 	printf("Xin chao %s \n", name );
 	printf("Email cua ban la %s \n" ,mail ) ;
 	// Chuoi ki tu cua ban co the bao gom ca number , tuy nhien no chi coi chung la cac ki tu , vay nen chung ta se khong the tinh toan voi no
